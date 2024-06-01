@@ -13,4 +13,9 @@ public class HelloController {
     public String getHello(){
         return "Hello world " + LocalDate.now();
     }
+
+    @GetMapping("/bye")
+    public String sayGoodBye(){
+        return "Good bye see you later " + LocalDate.now();
+    }
 }
